@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (empty($_SESSION["user-status"])) {
+    header("Location: login.php");
+}
+
+?>
+
 <html>
 <head>
     <title>Cinema Swipe</title>
@@ -10,6 +18,9 @@
         <p class="title"></p>
         <img class="cover">
     </div>
+    <form method="POST" action="login.php">
+        <button name="logout" value="logout">Logout</button>
+    </form>
     <script type="application/javascript" src="script/match.js">
     </script>
 </body>
