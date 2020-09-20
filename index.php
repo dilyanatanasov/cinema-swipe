@@ -7,6 +7,7 @@
 </head>
 <body>
     <div class="movies">
+        <p class="title"></p>
         <img class="cover">
     </div>
     <script type="application/javascript" src="script/match.js">
