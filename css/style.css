@@ -24,5 +24,6 @@ body {
 
 .movies .cover {
     margin-top: 2vh;
+    height: 95%;
     width: 90%;
 }
