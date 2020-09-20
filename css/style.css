@@ -1,0 +1,28 @@
+:root {
+    --main-color: #333;
+    --heading-color: lightcoral;
+    --text-color: coral;
+}
+
+body {
+    font-family: Arial, serif;
+    font-size: 5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.movies {
+    margin: 0 auto;
+    margin-top: 5vh;
+    text-align: center;
+    width: 10em;
+    height: 85vh;
+    background-color: var(--main-color);
+    color: var(--heading-color);
+    border-radius: 0.5rem;
+}
+
+.movies .cover {
+    margin-top: 2vh;
+    width: 90%;
+}
