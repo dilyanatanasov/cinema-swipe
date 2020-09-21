@@ -18,7 +18,7 @@ const isMatch = (status) => {
         data: status,
         success: (data) => {
             if (data) {
-                alert("You matched congrats");
+                snackbarShow("You've matched!");
             }
         },
         error: (errors) => {
@@ -31,10 +31,20 @@ const endOfLine = () => {
     const errorImage = "https://64.media.tumblr.com/tumblr_m657g3JIph1qbzvbgo1_500.jpg";
     $(".cover").attr("src", errorImage);
     $(".title").html(`<p class='title'>Come later for more</p>`);
-    alert("No more photos");
+    snackbarShow("No more photos");
+}
+
+const snackbarShow = (content) => {
+    $("#snackbar").removeClass("hide").addClass("show");
+    $("#snackbar").text(content);
+    setTimeout((x) => {
+            $("#snackbar").removeClass("show").addClass("hide");
+        }
+        , 1000);
 }
 
 $(document).ready(() => {
+    $.mobile.autoInitializePage = false;
     let photos = [];
     let nextIndex = 1;
 

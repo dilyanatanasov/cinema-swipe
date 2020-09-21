@@ -12,15 +12,15 @@ class Authorization {
         print_r($result);
         if ($result) {
             $_SESSION["user-status"] = 1;
-            header("Location: authorize.php");
+            header("Location: index.php");
         } else {
-            header("Location: login.php");
+            header('Location: '.$_SERVER['REQUEST_URI']);
         }
     }
 
     public function logout() {
         $_SESSION["user-status"] = 0;
         session_destroy();
-        header("Location: login.php");
+        header('Location: '.$_SERVER['REQUEST_URI']);
     }
 }
