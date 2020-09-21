@@ -23,17 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e495bd3-c52e-40c4-a034-b6a27346cf27" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api/listFriends.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/listPossibleFriends.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/addFriends.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addFriend.php" beforeDir="false" afterPath="$PROJECT_DIR$/addFriend.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/authenticate.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/authenticate.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repositories/UserFriendsRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/repositories/UserFriendsRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repositories/UsersRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/repositories/UsersRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/friends.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/friends.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/navigation.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600608482659</updated>
-      <workItem from="1600608483703" duration="45055000" />
+      <workItem from="1600608483703" duration="46298000" />
     </task>
     <servers />
   </component>

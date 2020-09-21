@@ -1,11 +1,12 @@
 :root {
-    --main-color: #333;
-    --heading-color: lightcoral;
+    --main-color: #333333;
+    --sub-color: #343434;
+    --heading-color: #cb5858;
     --text-color: coral;
 }
 
 body {
-    background-color: #dae3c1;
+    background-color: var(--main-color);
     font-family: 'Ubuntu', sans-serif;
     font-size: 2rem;
     margin: 0;
@@ -85,7 +86,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: linear-gradient(to right, #4c7b2e, #54a052);
+    background: linear-gradient(to top right, var(--main-color) 35%, var(--text-color));
 }
 
 .topnav .logo{
@@ -138,21 +139,21 @@ body {
 }
 
 .topnav .logout:hover {
-    background-color: #488b46;
+    background-color: #d5663f;
     color: black;
 }
 
 .topnav .add:hover {
-    background-color: #488b46;
+    background-color: #d5663f;
 }
 
 .topnav .logout.active {
-    background-color: #4CAF50;
+    background-color: #d5663f;
     color: white;
 }
 
 .topnav .add:active {
-    background-color: #4CAF50;
+    background-color: #d5663f;
     color: white;
 }
 
@@ -171,7 +172,7 @@ body {
     cursor: pointer;
     border-radius: 5em;
     color: #fff;
-    background: linear-gradient(to right, #3a7f0e, #77b475);
+    background: linear-gradient(to right, var(--heading-color), var(--text-color));
     border: 0;
     padding-left: 40px;
     padding-right: 40px;
