@@ -1,15 +1,15 @@
 <?php
-require_once "../db/MoviesRepository.php";
+require_once "../repositories/MoviesRepository.php";
 
 /**
  * Class AreFriendsApi
  */
-class GetMovies {
+class GetMoviesApi {
     public function getMovies() {
         $movies = new MoviesRepository();
         return $movies->getAll();
     }
 }
 
-$api = new GetMovies();
+$api = new GetMoviesApi();
 echo json_encode($api->getMovies());

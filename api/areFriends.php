@@ -1,5 +1,5 @@
 <?php
-require_once "../db/UserFriendsRepository.php";
+require_once "../repositories/UserFriendsRepository.php";
 
 /**
  * Class AreFriendsApi

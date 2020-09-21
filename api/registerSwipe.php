@@ -1,5 +1,5 @@
 <?php
-require_once "../db/UsersRepository.php";
+require_once "../repositories/UsersRepository.php";
 /**
  * Class RegisterSwipeApi
  */

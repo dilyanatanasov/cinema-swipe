@@ -1,5 +1,6 @@
 <?php
-require_once "DB.php";
+require_once dirname(dirname(__FILE__)). "/core/DB.php";
+
 /**
  * Class UsersRepository
  */
@@ -23,10 +24,22 @@ class UsersRepository extends DB
     public function get($where)
     {
         $result = $this->db->query("SELECT 
-                                        id 
+                                        id,
+                                        password
                                     FROM 
                                         users 
                                     WHERE " . $where);
         return $result->fetchAll();
+    }
+
+    /**
+     * Add new user
+     * @param $username
+     * @param $password
+     * @return mixed
+     */
+    public function add($username, $password){
+        $sql = "INSERT INTO users(`username`, `password`) VALUES('{$username}', '{$password}')";
+        return $this->db->exec($sql);
     }
 }

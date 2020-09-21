@@ -33,7 +33,6 @@ body {
     border-radius: 1em;
 }
 
-
 #snackbar {
     visibility: hidden;
     min-width: 250px;
@@ -90,8 +89,11 @@ body {
 }
 
 .topnav .logo{
-    font-size: 20px;
     float: left;
+}
+
+.topnav .logo img {
+    width: 170px;
 }
 
 .topnav .logout{
@@ -109,7 +111,17 @@ body {
     cursor: pointer;
 }
 
-.topnav .logout input:hover {
+.topnav .add {
+    float: right;
+    background: none;
+    border: none;
+    padding: 20px;
+    font-size: 2vh;
+    color: #f2f2f2;
+    cursor: pointer;
+}
+
+.topnav .logout:hover {
     background: none;
     border: none;
     font-size: 2vh;
@@ -130,7 +142,16 @@ body {
     color: black;
 }
 
+.topnav .add:hover {
+    background-color: #488b46;
+}
+
 .topnav .logout.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.topnav .add:active {
     background-color: #4CAF50;
     color: white;
 }

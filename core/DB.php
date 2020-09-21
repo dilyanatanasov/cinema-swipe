@@ -8,7 +8,7 @@ CONST DB = "cinema_swipe";
  * Base class for all repository classes
  */
 class DB {
-    // Holds the db connection
+    // Holds the repositories connection
     public $db;
 
     /**

@@ -26,7 +26,7 @@ $user_id = $_SESSION["user-id"];
 
 <?php
 require_once "views/navigation.php";
-require_once "views/movies.php";
+require_once "views/friends.php";
 ?>
 
 <div id="snackbar" class="hide"></div>

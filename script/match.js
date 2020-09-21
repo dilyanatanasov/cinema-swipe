@@ -35,8 +35,10 @@ const endOfLine = () => {
 }
 
 const snackbarShow = (content) => {
-    $("#snackbar").removeClass("hide").addClass("show");
-    $("#snackbar").text(content);
+    $("#snackbar")
+        .removeClass("hide")
+        .addClass("show")
+        .text(content);
     setTimeout((x) => {
             $("#snackbar").removeClass("show").addClass("hide");
         }
@@ -44,7 +46,6 @@ const snackbarShow = (content) => {
 }
 
 $(document).ready(() => {
-    $.mobile.autoInitializePage = false;
     let photos = [];
     let nextIndex = 1;
 
@@ -66,8 +67,8 @@ $(document).ready(() => {
 
     $(".movies").on("swiperight", () => {
         if (nextIndex < photos.length) {
-            registerSwipe({user_id: 1, movie_id: 1, like: 1});
-            isMatch({user_one: 1, user_two: 2, movie_id: 1});
+            registerSwipe({user_id: loggedUserId, movie_id: photos[nextIndex], like: 1});
+            isMatch({user_one: loggedUserId, user_two: 2, movie_id: photos[nextIndex]});
             $(".cover").attr("src", photos[nextIndex].cover_photo);
             $(".title").html(`<p class='title'>${photos[nextIndex].name}</p>`);
             nextIndex++;
@@ -78,7 +79,7 @@ $(document).ready(() => {
 
     $(".movies img").on("swipeleft", () => {
         if (nextIndex < photos.length) {
-            registerSwipe({user_id: 1, movie_id: 1, like: 0});
+            registerSwipe({user_id: loggedUserId, movie_id: photos[nextIndex], like: 0});
             $(".title").html(`<p class='title'>${photos[nextIndex].name}</p>`);
             $(".cover").attr("src", photos[nextIndex].cover_photo);
             nextIndex++;

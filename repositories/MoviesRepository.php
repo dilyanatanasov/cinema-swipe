@@ -1,5 +1,5 @@
 <?php
-require_once "DB.php";
+require_once dirname(dirname(__FILE__)). "/core/DB.php";
 /**
  * Class MoviesRepository
  */
