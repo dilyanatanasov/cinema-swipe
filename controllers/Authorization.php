@@ -12,7 +12,7 @@ class Authorization {
         print_r($result);
         if ($result) {
             $_SESSION["user-status"] = 1;
-            header("Location: authorize.php");
+            header("Location: index.php");
         } else {
             header("Location: login.php");
         }
