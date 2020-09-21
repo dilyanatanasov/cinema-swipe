@@ -5,6 +5,9 @@ if (empty($_SESSION["user-status"])) {
 }
 
 $user_id = $_SESSION["user-id"];
+
+
+
 ?>
 
 <html>
@@ -30,6 +33,6 @@ require_once "views/friends.php";
 ?>
 
 <div id="snackbar" class="hide"></div>
-<script type="application/javascript" src="script/match.js"></script>
+<script type="application/javascript" src="script/addFriends.js"></script>
 </body>
 </html>

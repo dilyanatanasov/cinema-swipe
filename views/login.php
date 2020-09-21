@@ -15,7 +15,7 @@ echo '<html>
 </head>
 <body>
     <div class="main">
-        <p class="sign" align="center">Sign in</p>
+        <p class="sign" align="center">Welcome</p>
         <form class="form1" method="POST" action="login.php">
         <input class="un " type="text" name="username" align="center" placeholder="Username">
         <input class="pass" type="password" name="password" align="center" placeholder="Password">

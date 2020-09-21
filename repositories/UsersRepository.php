@@ -21,10 +21,10 @@ class UsersRepository extends DB
      * @param $where
      * @return mixed
      */
-    public function get($where)
-    {
+    public function get($where){
         $result = $this->db->query("SELECT 
                                         id,
+                                        username,
                                         password
                                     FROM 
                                         users 

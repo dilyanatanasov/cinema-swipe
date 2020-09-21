@@ -23,31 +23,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e495bd3-c52e-40c4-a034-b6a27346cf27" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/addFriend.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/Validation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/authenticate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/friends.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/movies.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/navigation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/register.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/listFriends.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/listPossibleFriends.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/addFriends.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/areFriends.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/areFriends.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/getMovies.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/getMovies.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/isMatch.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/isMatch.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/registerSwipe.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/registerSwipe.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/Authorization.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Authentication.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/authenticate.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addFriend.php" beforeDir="false" afterPath="$PROJECT_DIR$/addFriend.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/DB.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/DB.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/MoviesRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/repositories/MoviesRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/UserFriendsRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/repositories/UserFriendsRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/UserMoviesRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/repositories/UserMoviesRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/UsersRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/repositories/UsersRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/match.js" beforeDir="false" afterPath="$PROJECT_DIR$/script/match.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repositories/UserFriendsRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/repositories/UserFriendsRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repositories/UsersRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/repositories/UsersRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/friends.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/friends.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/navigation.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +82,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600608482659</updated>
-      <workItem from="1600608483703" duration="39465000" />
+      <workItem from="1600608483703" duration="45055000" />
     </task>
     <servers />
   </component>
@@ -135,10 +121,14 @@
       <screen x="68" y="27" width="3772" height="1053" />
     </state>
     <state x="740" y="273" width="521" height="610" key="NewPhpClassDialog/68.27.3772.1053@68.27.3772.1053" timestamp="1600705394485" />
-    <state x="789" y="479" width="399" height="156" key="NewPhpFileDialog" timestamp="1600711960057">
+    <state x="789" y="479" width="399" height="156" key="NewPhpFileDialog" timestamp="1600717033683">
       <screen x="68" y="27" width="3772" height="1053" />
     </state>
-    <state x="789" y="479" width="399" height="156" key="NewPhpFileDialog/68.27.3772.1053@68.27.3772.1053" timestamp="1600711960057" />
+    <state x="789" y="479" width="399" height="156" key="NewPhpFileDialog/68.27.3772.1053@68.27.3772.1053" timestamp="1600717033683" />
+    <state x="747" y="237" width="483" height="640" key="RollbackChangesDialog" timestamp="1600713661018">
+      <screen x="68" y="27" width="3772" height="1053" />
+    </state>
+    <state x="747" y="237" width="483" height="640" key="RollbackChangesDialog/68.27.3772.1053@68.27.3772.1053" timestamp="1600713661018" />
     <state x="117" y="127" width="812" height="853" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1600699924032">
       <screen x="68" y="27" width="1852" height="1053" />
     </state>
@@ -148,10 +138,10 @@
       <screen x="68" y="27" width="3772" height="1053" />
     </state>
     <state x="512" y="150" width="954" height="814" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/68.27.3772.1053@68.27.3772.1053" timestamp="1600631223425" />
-    <state x="685" y="162" width="618" height="783" key="find.popup" timestamp="1600630077969">
+    <state x="685" y="162" width="618" height="783" key="find.popup" timestamp="1600714587273">
       <screen x="68" y="27" width="3772" height="1053" />
     </state>
-    <state x="685" y="162" width="618" height="783" key="find.popup/68.27.3772.1053@68.27.3772.1053" timestamp="1600630077969" />
+    <state x="685" y="162" width="618" height="783" key="find.popup/68.27.3772.1053@68.27.3772.1053" timestamp="1600714587273" />
     <state x="658" y="252" key="run.anything.popup" timestamp="1600699393773">
       <screen x="68" y="27" width="1852" height="1053" />
     </state>
