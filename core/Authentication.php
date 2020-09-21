@@ -14,7 +14,7 @@ class Authentication {
      */
     public function login($username, $password) {
         $user = new UsersRepository();
-        $where = "username = '{$username}' && password = '$password'";
+        $where = "username = '{$username}' && password = '{$password}'";
         $result = $user->get($where);
         if ($result) {
             $_SESSION["user-status"] = 1;
