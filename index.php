@@ -21,6 +21,7 @@ $user_id = $_SESSION["user-id"];
         const loggedUserId = <?php echo $user_id ?>;
     </script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="script/hammerjs.js"></script>
 </head>
 <body>
 

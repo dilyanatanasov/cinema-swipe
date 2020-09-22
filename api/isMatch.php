@@ -12,7 +12,6 @@ class IsMatchApi {
                         AND movie_id = {$_POST["movie_id"]}
                         AND `like` = 1
                         LIMIT 1";
-
             $userMovies = new UserMoviesRepository();
             $result = $userMovies->get($where);
             return (!empty($result)) ? 1 : 0;
