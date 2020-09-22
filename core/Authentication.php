@@ -22,7 +22,7 @@ class Authentication {
             $_SESSION["user-username"] = $result[0]["username"];
             header("Location: index.php");
         } else {
-            header('Location: '.$_SERVER['REQUEST_URI']);
+            header('Location: '.$_SERVER['REQUEST_URI'].'?status=credentials');
         }
     }
 

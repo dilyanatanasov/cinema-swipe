@@ -1,7 +1,7 @@
 :root {
-    --main-color: #333333;
+    --main-color: #232222;
     --sub-color: #343434;
-    --heading-color: #cb5858;
+    --heading-color: #a32716;
     --text-color: coral;
 }
 
@@ -86,7 +86,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: linear-gradient(to top right, var(--main-color) 35%, var(--text-color));
+    background: linear-gradient(to top right, var(--main-color) 35%, var(--heading-color));
 }
 
 .topnav .logo{

@@ -1,16 +1,26 @@
-const snackbarShow = (content) => {
-    console.log(content);
-    if (content === "success") {
+const success = "Successfully registered!";
+const error = "Username/Password problem!";
+const credentials = "Wrong Credentials!";
+
+const snackbarShow = (status) => {
+    if (status === "success") {
         $("#snackbar").removeClass("hide").addClass("show");
-        $("#snackbar").text(content);
-        setTimeout((x) => {
+        $("#snackbar").text(success);
+        setTimeout(() => {
                 $("#snackbar").removeClass("show").addClass("hide");
             }
             , 2000);
-    } else if (content === "error") {
+    } else if (status === "error") {
         $("#snackbar").removeClass("hide").addClass("showError");
-        $("#snackbar").text(content);
-        setTimeout((x) => {
+        $("#snackbar").text(error);
+        setTimeout(() => {
+                $("#snackbar").removeClass("showError").addClass("hide");
+            }
+            , 2000);
+    } else if (status === "credentials") {
+        $("#snackbar").removeClass("hide").addClass("showError");
+        $("#snackbar").text(credentials);
+        setTimeout(() => {
                 $("#snackbar").removeClass("showError").addClass("hide");
             }
             , 2000);
