@@ -17,8 +17,7 @@ const isMatch = (status) => {
         type: "POST",
         data: status,
         success: (data) => {
-            console.log(data);
-            if (data) {
+            if (data == 1) {
                 snackbarShow("You've matched!");
             }
         },
@@ -148,7 +147,7 @@ class Carousel {
         let dirX = e.deltaX < 0 ? -1 : 1
 
         // get degrees of rotation, between 0 and +/- 45
-        let deg = this.isDraggingFrom * dirX * Math.abs(propX) * 45
+        let deg = this.isDraggingFrom * dirX * Math.abs(propX) * 25
 
         // get scale ratio, between .95 and 1
         let scale = (95 + (5 * Math.abs(propX))) / 100
@@ -171,17 +170,17 @@ class Carousel {
             if (this.nextCard) this.nextCard.style.transition = 'transform 100ms linear'
 
             // check threshold and movement direction
-            if (propX > 0.25 && e.direction == Hammer.DIRECTION_RIGHT) {
+            if (propX > 0.1 && e.direction == Hammer.DIRECTION_RIGHT) {
                 successful = true
                 // get right border position
                 posX = this.board.clientWidth
-                registerSwipe({user_id: loggedUserId, movie_id: this.photos[this.index], like: 0});
-                isMatch({user_one: loggedUserId, user_two: 2, movie_id: this.photos[this.index]})
-            } else if (propX < -0.25 && e.direction == Hammer.DIRECTION_LEFT) {
+                registerSwipe({user_id: loggedUserId, movie_id: this.photos[this.index].id, like: 0});
+                isMatch({user_one: loggedUserId, user_two: 2, movie_id: this.photos[this.index].id})
+            } else if (propX < -0.1 && e.direction == Hammer.DIRECTION_LEFT) {
                 successful = true
                 // get left border position
                 posX = -(this.board.clientWidth + this.topCard.clientWidth)
-                registerSwipe({user_id: loggedUserId, movie_id: this.photos[this.index], like: 0});
+                registerSwipe({user_id: loggedUserId, movie_id: this.photos[this.index].id, like: 0});
             }
 
             if (successful) {

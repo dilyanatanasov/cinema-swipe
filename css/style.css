@@ -206,17 +206,17 @@ body {
     height: 100%;
     position: relative;
     overflow: hidden;
-    background-color: rgb(245, 247, 250);
+    background: none;
 }
 
 .card {
-    width: 420px;
-    height: 620px;
+    width: 350px;
+    height: 350px;
     position: absolute;
     top: 40%;
     left: 50%;
     border-radius: 1%;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
-    background-color: white;
+    background-color: #2f2d2d;
     transform: translateX(-50%) translateY(-50%) scale(0.95);
 }

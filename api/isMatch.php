@@ -6,10 +6,9 @@ require_once "../repositories/UserMoviesRepository.php";
  */
 class IsMatchApi {
     public function isMatch() {
-        if (!empty($_POST) && !empty($_POST["user_one"]) && !empty($_POST["user_two"]) && !$_POST["movie_id"]) {
-            $where = "WHERE 
-                        user_id = '{$_POST["user_one"]}' OR '{$_POST["user_two"]}'
-                        AND movie_id = {$_POST["movie_id"]}
+        if (!empty($_POST) && !empty($_POST["user_one"]) && !empty($_POST["user_two"]) && !empty($_POST["movie_id"])) {
+            $where = " user_id = '{$_POST["user_one"]}' OR '{$_POST["user_two"]}'
+                        AND movie_id = '{$_POST["movie_id"]}'
                         AND `like` = 1
                         LIMIT 1";
             $userMovies = new UserMoviesRepository();
